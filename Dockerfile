@@ -4,5 +4,4 @@
 FROM php5-fpm:latest
 MAINTAINER yohan <783b8c87@scimetis.net>
 ENV DEBIAN_FRONTEND noninteractive
-RUN echo "deb http://archive.debian.org/debian/ jessie-backports main" >> /etc/apt/sources.list
-RUN apt-get update && apt-get -t jessie-backports -y install imagemagick exiftool ffmpeg libjpeg-turbo-progs poppler-utils MediaInfo
+RUN apt update && apt -t buster-backports -y install imagemagick exiftool ffmpeg libjpeg-turbo-progs poppler-utils MediaInfo
